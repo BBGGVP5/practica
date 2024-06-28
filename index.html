@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа программирования</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/modal.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link href="boostrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="background1">
+        <nav class="navbar navbar-expand-lg navbar-white bg-white mx-auto" style="border-radius: 20px; max-width: 1350px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-top: 20px;">
+            <div class="container">
+                <a href="index.html" title="header-page"><div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                </div></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="" rel="noopener noreferrer" target="_blank" data-bs-toggle="modal" data-bs-target="#NonePage">Чему Вы научитесь?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" rel="noopener noreferrer" target="_blank" data-bs-toggle="modal" data-bs-target="#NonePage">Процесс обучения</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" rel="noopener noreferrer" target="_blank" data-bs-toggle="modal" data-bs-target="#NonePage">Стоимость</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="" rel="noopener noreferrer" target="_blank" data-bs-toggle="modal" data-bs-target="#NonePage">Контакты</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-primary" href="login.html">Войти</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link btn btn-outline-primary" href="register.html">Регистрация</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </nav>
+<main>
+    <div class="row">
+    <section class="hero col-md-6">
+        <h2>Школа <span style="font-weight: bold;"><span style="color:#F15525">{</span>программирования<span style="color:#F15525">}</span></span> <br>для тех, кому нужны<br> реальные навыки, <br>а не просто сертификат</h2>
+        <hr class="divider">
+        <p>Пройдите тестирование, чтобы получить <br> доступ к бесплатным вводным урокам</p>
+        <a href="" class="btn1" data-bs-toggle="modal" data-bs-target="#exampleModal">Пройти тестирование ↗</a>
+    </section>
+    <div class="image-container col-md-4">
+        <img src="images/keyboard.png" alt="Keyboard Illustration">
+    </div>
+</div>
+</main>
+    
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"  style="border: 0;">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="border: 0;">
+                <h5>Перед тем, как приступить к обучению, необходимо пройти небольшой тест</h5>
+                <p style="font-weight: normal; font-family: Arial, Helvetica, sans-serif; margin-top: 20px;">Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ - выбирайте пункт "Не знаю".</p>
+            </div>
+            <div class="modal-footer"  style="border: 0;">
+                <a href="#test" class="btn2" style="margin-right: 120px;" data-bs-toggle="modal" data-bs-target="#exampleModal2">Начать тест ↗</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="border: 0;">
+                <h5 class="modal-title-pill" id="exampleModalLabel2">ЗАДАНИЕ №1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="border: 0;">
+                Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+                <form id="Form1">
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="radio" name="answer" id="answer1" value="option1">
+                        <label class="form-check-label" for="answer1">
+                            Да, сумма явно неверная
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer" id="answer2" value="option2">
+                        <label class="form-check-label" for="answer2">
+                            Нет, такая сумма вполне могла получиться
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer" id="answer3" value="option3">
+                        <label class="form-check-label" for="answer3">
+                            Не знаю, не получается решить
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer" style="border: 0;">
+                <a href="#test" class="btn2" style="margin-right: 120px; font-size: 1.5rem;" data-bs-toggle="modal" id="openModalButton">Ответить →</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="border: 0;">
+                <h5 class="modal-title" id="errorModalLabel" style="margin-right: 170px;">Ошибка</h5>
+            </div>
+            <div class="modal-body" style="border: 0;">
+                Пожалуйста, выберите хотя бы один вариант.
+            </div>
+            <div class="modal-footer" style="border: 0;">
+                <a href="#test" class="btn2" style="margin-right: 135px; font-size: 1.5rem;" data-bs-toggle="modal" data-bs-target="#exampleModal2">Назад ←</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModal3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="border: 0;">
+                <h5 class="modal-title-pill" id="exampleModalLabe3">ЗАДАНИЕ №1</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="border: 0;">
+                <h5>Правильно! С логикой у вас все отлично</h5>
+                <p style="font-weight: normal; font-family: Arial, Helvetica, sans-serif; margin-top: 20px;">Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана Ивановича. <br> <br>В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</p>
+            </div>
+            <div class="modal-footer" style="border: 0;">
+                <a href="#test" class="btn2" style="margin-right: 135px; font-size: 1.5rem;" data-bs-toggle="modal" data-bs-target="#exampleModal4">Далее →</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModal4" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="border: 0;">
+                <div class="modal-title-pill text-center" style="margin-left: 135px;">
+                <img src="images/like.png" alt="like">
+                <h5 id="exampleModalLabe4">Набрано 4/4</h5>
+            </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="border: 0;">
+                <h5>Это великолепный результат! У вас есть все шансы стать отличным программистом. Начните обучение прямо сейчас, доступ ко вводным урокам уже открыт</h5>
+            </div>
+            <div class="modal-footer" style="border: 0;">
+                <a href="#test" class="btn2" style="margin-right: 80px; font-size: 1rem;" data-bs-toggle="modal" data-bs-target="#exampleModal4">Начать учиться бесплатно →</a>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="modal fade" id="NonePage" tabindex="-1" aria-labelledby="NonePage" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header"  style="border: 0;">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="border: 0;">
+                        <h5>Упс... Технические шоколадки</h5>
+                        <p style="font-weight: normal; font-family: Arial, Helvetica, sans-serif; margin-top: 20px;">Страница пока-что в разработке, но вы не отчаивайтесь</p>
+                    </div>
+                    <div class="modal-footer"  style="border: 0;">
+                        <a target="_blank" href="https://контракт-на-сво.рф" class="btn2" style="margin-right: 50px;">Подписаться на новости ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+<div class="shadow-lg p-4 mb-5 bg-body rounded-bottom-5"  style="margin-left: 5px; margin-right: 5px;">
+    <div class="container">
+<h2 class="text-center mt-5" style="font-weight: bold; margin-bottom: 30px;">Какие технологии вы изучите:</h2>
+<div class="fon2">
+<div class="row">
+<div class="container text-center col-md-6" style="margin-top: 40px;">
+    <div>
+      <img src="images/Group_1175.png" alt="технологии">
+    </div>
+</div>
+<div class="container mt-5 px-5 col-md-6">
+    <div class="mt-4">
+        <span class="tech-bubble bg-python">Язык программирования Python</span>
+        <span class="tech-bubble bg-seti">Сети</span>
+    </div>
+    <div class="mt-2">
+        <span class="tech-bubble bg-db">Базы данных</span>
+        <span class="tech-bubble bg-framework">Фреймворки FastAPI и Django</span>
+    </div>
+    <div class="mt-2">
+        <span class="tech-bubble bg-debug">Отладка и тестирование</span>
+        <span class="tech-bubble bg-docker">Docker</span>
+        <span class="tech-bubble bg-os">ОС</span>
+    </div>
+    <p class="mt-4" style="font-weight: bold;">Это необходимый минимум для современного <Br>backend-разработчика</p>
+</div>
+</div>
+</div>
+</div>
+
+    <div class="container mt-5">
+        <h2 class="text-center">Обучение в YtYt – это <br>удобно и результативно</h2>
+        <div class="row mt-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box">
+                    <div class="icon"><img src="images/svg-gobbler_1.png" alt="code"></div>
+                    <h5>Огромное количество практики</h5>
+                    <p>Более 500 самостоятельных<br> заданий и 20 полноценных<br> больших проектов</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box">
+                    <div class="icon"><img src="images/svg-gobbler_3.png" alt="methods"></div>
+                    <h5>Современные методики обучения</h5>
+                    <p>Спиральное обучение: <br>погружаемся в материал <br>постепенно виток за витком</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box">
+                    <div class="icon"><img src="images/Group_1182.png" alt="the presentation"></div>
+                    <h5>Простое и понятное изложение</h5>
+                    <p>Вместо заумных<br> терминов – примеры<br> из реального мира</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box">
+                    <div class="icon"><img src="images/Group_1176.png" alt="calendar"></div>
+                    <h5>Гибкий график<br> занятий</h5>
+                    <p>Учитесь в любое время<br> в удобном<br> для вас темпе</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4" style="justify-content: center;">
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box">
+                    <div class="icon"><img src="images/Group_1195.png" alt="chat"></div>
+                    <h5>Прямая связь с опытными<br> программистами</h5>
+                    <p>Задавайте вопросы<br> и отправляйте свой код <br>на проверку</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box">
+                    <div class="icon"><img src="images/svg-gobbler_(5)_1.png" alt="ruble"></div>
+                    <h5>Оплата небольшими <br>частями</h5>
+                    <p>Платите только за тот <br>материал, который сейчас<br> изучаете, <br>а не за весь курс сразу</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="feature-box">
+                    <div class="icon"><img src="images/svg-gobbler_(6)_1.png" alt="mobile"></div>
+                    <h5>Быстрый и легкий <br>возврат</h5>
+                    <p>Если передумаете учиться<br> - <br>вернем деньги за 3 <br>рабочих дня</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container mt-5">
+    <h1 class="text-center">Как происходит обучение на YtYt?</h1>
+    <p class="text-center">Обучение должно быть комфортным. Поэтому мы разработали собственную <br>платформу для обучения программированию. На ней вы можете не только<br> будете изучать теорию, но и запускать готовые примеры и даже писать свой<br> собственный код.</p>
+    <div class="video-container">
+        <div class="video-placeholder" onclick="playVideo()">
+            <div class="play-button"><img src="images/Group_1178.png" alt="play-button"></div>
+        </div>
+        <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1&rel=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:none;"></iframe>
+    </div>
+</div>
+
+<div class="fon3">
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 feature-box2">
+            <h2 class="my-3">01</h2>
+            <h5>Весь материал разбит<br> на небольшие уроки</h5>
+            <p>Теория и практика подаются<br> маленькими порциями. Так<br> вам будет легче усваивать<br> новые знания</p>
+        </div>
+        <div class="col-md-1 border-line d-none d-md-block my-5"></div>
+        <div class="col-md-3 feature-box2">
+            <h2 class="my-3">02</h2>
+            <h5>Обучение <br>через практику</h5>
+            <p>Всё что вы узнали, вы тут же<br> начинаете применять на <br>практике. Вы сразу видите<br> результаты своего труда</p>
+        </div>
+        <div class="col-md-1 border-line d-none d-md-block my-5"></div>
+        <div class="col-md-3 feature-box2">
+            <h2 class="my-3">03</h2>
+            <h5>Нет ограничений<br> по времени</h5>
+            <p>Можно совмещать учёбу с работой<br> и другими делами. Не нужно <br>выпрашивать академический<br> отпуск, если пришлось сделать<br> перерыв</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    
+    
+<div class="fon4 mx-auto">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+<div class="row">
+<div class="text-center mt-5 col-md-6">
+    <a href="#test" class="btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Начать обучение ↗</a>
+</div>
+<div class="tt mt-4 col-md-6">
+<p class="mx-3" style="font-weight: bold;">Попробуйте, первые уроки<br> бесплатны, но нужно пройти<br> тестирование</p>
+</div>
+</div>
+    </div>
+</div>
+
+<div class="wrapper mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="custom-card">
+                <div class="image-container2 mx-auto" style="width: 300px; margin-top: 30px; margin-right: 10px;">
+                    <img src="images/codde.png" alt="code">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="custom-card help-support">
+                <h3>Помощь и поддержка</h3>
+                <p>Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
+                <p>Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="custom-card2">
+                <h3>Методика обучения</h3>
+                <p>Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="custom-card">
+                <div class="image-container2 mx-auto" style="width: 320px; margin-top: 55px; margin-right: 10px;">
+                    <img src="images/computer.png" alt="computer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center" style="margin-top: 70px;">
+            <h2>Стоимость обучения</h2>
+        </div>
+    </div>
+<div class="row" style="padding-top: 15px;">
+    <div class="col-md-1 d-flex flex-column align-items-center my-2" style="padding-left: 40px; padding-top: 6px;">
+        <img src="images/calendar2.png" alt="calendar">
+    </div>
+    <div class="col-md-3 d-flex flex-column align-items-center my-2">
+        <p>Весь курс разбит на несколько <br>блоков. Оплата поэтапная вы платите <br>только за тот блок, который сейчас <br>проходите.</p>
+    </div>
+    <div class="col-md-1 d-flex flex-column align-items-center my-2" style="padding-left: 40px; padding-top: 6px;">
+        <img src="images/ruble2.png" alt="ruble">
+    </div>
+    <div class="col-md-2 d-flex flex-column align-items-center my-2">
+        <p>Любой из блоков <br>вы можете оплатить в <br> рассрочку</p>
+    </div>
+    <div class="col-md-1 d-flex flex-column align-items-center my-2" style="padding-left: 40px; padding-top: 6px;">
+        <img src="images/mobile-card.png" alt="mobile-card">
+    </div>
+    <div class="col-md-3 d-flex flex-column align-items-center my-2">
+        <p>Если передумаете учиться, то возврат<br> можно оформить в любой момент.<br> Возвращаем деньги за 3 рабочих дня.</p>
+    </div>
+</div>
+</div>
+
+<div class="container mt-5">
+    <table class="table">
+        <thead>
+        <tr>
+            <th style="color: #38BFF2;">Блок</th>
+            <th style="color: #38BFF2;">Стоимость (₽)</th>
+            <th style="color: #38BFF2;">Расчетное время обучения (мес.) *</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-active">
+            <td>Введение в программирование</td>
+            <td>Бесплатно</td>
+            <td>0.5</td>
+        </tr>
+        <tr>
+            <td>Основы программирования на Python</td>
+            <td>9 900</td>
+            <td>1</td>
+        </tr>
+        <tr class="table-active">
+            <td>Python, продвинутый уровень</td>
+            <td>14 900</td>
+            <td>2.5</td>
+        </tr>
+        <tr>
+            <td>Сети + фреймворк Flask</td>
+            <td>14 900</td>
+            <td>2.5</td>
+        </tr>
+        <tr class="table-active">
+            <td>Базы данных</td>
+            <td>14 900</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Фреймворк Django</td>
+            <td>14 900</td>
+            <td>2</td>
+        </tr>
+        <tr class="table-active">
+            <td>Разработка «боевого» проекта</td>
+            <td>9 900</td>
+            <td>1.5</td>
+        </tr>
+        <tr class="itog">
+            <td>Итого</td>
+            <td>79 400</td>
+            <td>12</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class="text-muted">* если занятиям уделяется около 20 часов в неделю</p>
+</div>
+
+<div class="container mt-5 py-5">
+    <div class="info-block mx-auto content-container">
+        <img src="images/rupor.png" alt="rupor">
+        <div class="info-text mx-auto text-content">
+            Все блоки проходят строго по порядку. Пропустить какой-то блок<br> или начать обучение с середины нельзя, даже если вы считаете, что<br> уже знаете какую-то часть материала. Только так мы можем<br> гарантировать, что вы получите все знания, предусмотренные<br> учебной программой.
+        </div>
+        <a href="#test" class="btn2" data-bs-toggle="modal" data-bs-target="#exampleModal">Начать обучение ↗</a>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="index.html" title="header-page" style="text-decoration: none" class="logo">
+                    <img src="images/logo2.png" alt="logo-footer">
+                    <div style="margin-left: 10px; font-size: 0.9rem; color: #8E8E8E;">Школа<br>программирования</div>
+                </a>
+                <div class="social-icons mt-3">
+                    <a href="" rel="noopener noreferrer" target="_blank" data-bs-toggle="modal" data-bs-target="#NonePage"><img src="images/socseti.png" alt="socseti"></a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-links" style="margin-left: 200px;" >
+                    <a href="" data-bs-toggle="modal" data-bs-target="#NonePage">Чему вы научитесь?</a>
+                    <a href="" rel="noopener noreferrer" style="margin-top: 20px;" data-bs-toggle="modal" data-bs-target="#NonePage">Процесс обучения</a>
+                    <a href="" rel="noopener noreferrer" style="margin-top: 20px;" data-bs-toggle="modal" data-bs-target="#NonePage">Стоимость</a>
+                    <a href="" rel="noopener noreferrer" style="margin-top: 20px;" data-bs-toggle="modal" data-bs-target="#NonePage">Контакты</a>
+                    <a href="" rel="noopener noreferrer" style="margin-top: 20px;" data-bs-toggle="modal" data-bs-target="#NonePage">Регистрация</a>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin-bottom: 20px;">
+                <div class="contact-info" style="margin-left: 200px;">
+                    <p><a href="tel:+79995555577" class="phone">+7 (999) 555-555-77</a></p>
+                    <p><a href="mailto:info@ytyt.ru" class="email">info@ytyt.ru</a></p>
+                    <p style="margin-top: 70px;">ИП Умаров Т. А.<br>ИНН 745216229809<br>ОГРНИП 315745200001358</p>
+                </div>
+            </div>
+        </div>
+        <div class="row bordertop">
+            <div class="col-md-4">
+                <div class="bottom-footer mt-4">
+                    <a>© 2024 ytyt — Все права защищены</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bottom-footer mt-4">
+                    <a href="" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#NonePage">Пользовательское<br> соглашение</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bottom-footer mt-4">
+                    <a href="" rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#NonePage">Политика<br> конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function() {
+        $(document).ready(function() {
+            $('#openModalButton').on('click', function() {
+                var isRadioSelected = $('input[name="answer"]:checked').length > 0;
+
+                if (isRadioSelected) {
+                    $('#exampleModal3').modal('show');
+                } else {
+                    $('#errorModal').modal('show');
+                }
+            });
+        });
+    });
+</script>
+<script src="boostrap/js/bootstrap.min.js"></script>
+</body>
+</html>
