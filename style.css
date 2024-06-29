@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 766px) {
     .background1{
         margin-top: 10px;
     }
@@ -26,6 +26,31 @@
         margin-left: 140px;
     }
 }
+@media only screen and (min-width: 1439px) {
+    nav{
+        width: 1050px;
+    }
+     .background1{
+        margin-top: 10px;
+    }
+   
+    .nav-link{
+        margin-left: 0;
+    }
+    .nav-link2{
+        margin-left: 100px;
+    }
+    
+    br h1, br p{
+        display: none;
+    }
+    .image-container {
+        margin-top: 10px;
+        margin-left: 200px;
+        margin-bottom: 100px;
+    }
+   
+}
 @font-face {
     font-family: Gilroy;
     src: url(fonts/gilroy-bold.ttf);
@@ -34,6 +59,7 @@
     font-family: Glory Regular;
     src: url(fonts/glory-regular.ttf);
 }
+
 
 .tt{
     text-align: start;
@@ -204,7 +230,7 @@ nav ul li .login-btn {
     padding: 20px;
     border-radius: 30px;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
     height: 300px;
 }
 .feature-box img {
