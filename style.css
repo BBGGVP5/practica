@@ -1,6 +1,7 @@
-@media only screen and (min-width: 412px) {
+@media (max-width: 320px) {
     nav{
-        width: 500px;
+        transform: none;
+        width: 320px;
     }
      .background1{
         margin-top: 10px;
@@ -20,15 +21,108 @@
         margin-top: 10px;
         margin-left: 0;
         margin-bottom: 100px;
-    }
+    }  
     .divider{
-        transform: translate(70%, 0);
+        display: none;
     }
     .hero a{
-        margin-left: 80px;
+       transform: none;
+        margin-left: 60px;
+    }
+    .hero p{
+        font-size: 1em;
+        margin-right: 110px;
+        text-align: center;
+    }
+    .hero h2{
+        font-size: 1em;
+        margin-right: 110px;
+        text-align: center;
+    }
+    .logo-body img{
+        display: none;
+    }
+    .boody{
+        transform: translate(5%, 0); width: 300px;
+    }
+    .play-button img{
+        width: 320px;
+    }
+    .fon3{
+        transform: translate(15%, 0);
+    }
+    .fon3{
+        width: 250px;
+    }
+    br{
+        display: none;
+    }
+    .btn2{
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .tt{
+        margin-left: -50px;
+        font-size: 1em;
+    }
+    .table{
+        width: 100px;
+    }
+    .image-container img{
+        width: 300px;
+        margin-left: -50px;
+    }
+    .feature-box {
+        margin-bottom: 20px;
+    }
+    .col-md-6:last-child {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    .text-md-start {
+        text-align: center;
+    }
+    .tech-bubble {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    .fon4{
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+    .info-text {
+        font-size: 14px;
+    }
+    .content-container .text-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .video-container{
+        padding-top: 250px;
+    }
+    .wrapper{
+        transform: none;
     }
 }
-@media only screen and (min-width: 766px) {
+@media (max-width: 768px) {
+    nav{
+        width: 650px;
+    }
+    .divider{
+        display: none;
+    }
     .background1{
         margin-top: 10px;
     }
@@ -47,13 +141,53 @@
     br h1, br p{
         display: none;
     }
-    .image-container {
+    .image-container{
+        margin-left: 30px;
+    }
+    .image-container2{
         margin-top: 10px;
-        margin-left: 100px;
-        margin-bottom: 100px;
+        margin-right: 100px;
+        margin-bottom: 10px;
+        width: 300px;
     }
     .tt{
         margin-left: 140px;
+    }
+    .logo-body{
+        transform: none;
+        margin-right: 490px;
+        margin-top: 80px;
+    }
+    .logo-body img{
+       width: 400px;
+    }
+    .hero a{
+        margin-left: 60px;
+        text-align: center;
+    }
+    .hero p{
+        font-size: 1em;
+        text-align: center;
+    }
+    .hero h2{
+        font-size: 1em;
+        text-align: center;
+    }
+    .custom-card2, .custom-card{
+        max-width: 430px;
+    }
+    .hero{
+        transform: translate(40%, 0);
+    }
+    br{
+        display: none;
+    }
+    .btn2{
+        font-size: 1em;
+        margin-top: 10px;
+    }
+    .wrapper{
+        transform: translate(25%, 0);
     }
 }
 @media only screen and (min-width: 1439px) {
@@ -79,7 +213,6 @@
         margin-left: 200px;
         margin-bottom: 100px;
     }
-   
 }
 @font-face {
     font-family: Gilroy;
@@ -90,9 +223,15 @@
     src: url(fonts/glory-regular.ttf);
 }
 
+.logo-body{
+    max-width: 50px;
+    transform: translate(300%, 0);
+}
 
 .tt{
-    text-align: start;
+    text-align: center;
+    transform: translate(13%, 0);
+    font-size: 1.3rem;
 }
 
 h1, h2, h3, h4, h5{
@@ -149,9 +288,9 @@ nav ul li .login-btn {
     font-size: 2.5em;
     color: #333;
     line-height: 1.5;
-    text-align: left;
     left: 50%;
-    transform: translate(52%, 0);
+    text-align: left;
+    transform: translate(30%, 0);
 }
 
 .highlight {
@@ -162,9 +301,8 @@ nav ul li .login-btn {
     font-size: 1.2em;
     color: #555;
     margin-top: 20px;
-    text-align: left;
     left: 50%;
-    transform: translate(52%, 0);
+    transform: translate(32%, 0);
 }
 .hero a {
     font-size: 1.2em;
@@ -180,14 +318,13 @@ nav ul li .login-btn {
     text-decoration: none;
     border-radius: 50px;
     font-size: 1.1em;
-    transform: translate(52%, 0);
+    transform: translate(22%, 0);
 }
 
 .image-container {
     margin-top: 100px;
     padding-top: 100px;
     left: 50%;
-    transform: translate(20%, 0);
 }
 
 .hero img {
@@ -220,7 +357,7 @@ nav ul li .login-btn {
     width: 100%;
     max-width: 400px;
     left: 50%;
-    transform: translate(122%, 0);
+    transform: translate(62%, 0);
   }
 
   .tech-bubble {
@@ -337,32 +474,38 @@ nav ul li .login-btn {
 }
 .btn2{
     display: inline-block;
-    padding: 15px 25px;
+    padding: 10px 20px;
     background-color: #e94e32;
     color: #fff;
     text-decoration: none;
     border-radius: 50px;
-    font-size: 1.4em;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.btn3{
+    display: inline-block;
+    padding: 15px 25px; 
+    background-color: #e94e32;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.8em;
     margin-bottom: 10px;
 }
 .fon3{
     background-color: #f7f4f4;
     border-radius: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .fon4{
     justify-content: center;
     background-color: #f7f4f4;
-    border-radius: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
+    border-radius: 50px;
+    transform: translate(1%, 0);
     margin-top: 30px;
-    margin-bottom: 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-    max-width: 800px;
+    max-width: 500px;
+    background-position: center;
 }
 .border-line {
     border-left: 2px solid #dfdede;
@@ -471,7 +614,7 @@ nav ul li .login-btn {
     font-size: 1rem;
     color: #495057;
     font-weight: normal;
-    font-size: 1rem;
+    margin-top: 20px;
 }
 
 .footer {
@@ -503,12 +646,14 @@ nav ul li .login-btn {
     display: block;
     margin-bottom: 0.5rem;
     text-decoration: none;
+    transform: translate(30%, 0);
 }
 .footer .footer-links a:hover {
     color: #007bff;
 }
 .footer .contact-info {
     color: #8E8E8E;
+    transform: translate(30%, 0);
 }
 .footer .contact-info a.phone {
     color: #007bff;
@@ -527,7 +672,7 @@ nav ul li .login-btn {
 .footer .bottom-footer {
     color: #6c757d;
     text-align: start;
-    margin-left: 100px;
+    transform: translate(30%, 0);
 }
 .footer .bottom-footer a {
     color: #6c757d;
@@ -592,6 +737,7 @@ nav ul li .login-btn {
 .content-container {
     text-align: center;
     margin-top: 20px;
+    max-width: 1200px;
 }
 .content-container img {
     max-width: 100%;
