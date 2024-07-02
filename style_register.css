@@ -2,9 +2,17 @@
     nav{
         width: 1150px;
     }
-   
 }
-
+@media (max-width: 320px) {
+    nav{
+        transform: none;
+        width: 300px;
+    }
+    .btn1 {
+        padding: 10px 40px;
+        font-size: 0.8em;
+    }
+}
 .background-radial-gradient {
     background-color: hsl(218, 41%, 15%);
     background-image: radial-gradient(650px circle at 0% 0%,
@@ -83,12 +91,14 @@
     display: block;
     margin-bottom: 0.5rem;
     text-decoration: none;
+    transform: translate(30%, 0);
 }
 .footer .footer-links a:hover {
     color: #007bff;
 }
 .footer .contact-info {
     color: #8E8E8E;
+    transform: translate(30%, 0);
 }
 .footer .contact-info a.phone {
     color: #007bff;
@@ -104,14 +114,10 @@
 .footer .contact-info a.email:hover {
     color: #000000;
 }
-.bordertop{
-    border-top: 1px solid #e9ecef;
-    padding: 1rem 0;
-}
 .footer .bottom-footer {
     color: #6c757d;
     text-align: start;
-    margin-left: 100px;
+    transform: translate(30%, 0);
 }
 .footer .bottom-footer a {
     color: #6c757d;
