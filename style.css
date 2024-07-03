@@ -1,7 +1,6 @@
-@media (max-width: 320px) {
+@media (max-width: 320px){
     nav{
-        transform: none;
-        width: 320px;
+        width: 300px;
     }
      .background1{
         margin-top: 10px;
@@ -13,7 +12,6 @@
     .nav-link2{
         margin-left: 100px;
     }
-    
     br h1, br p{
         display: none;
     }
@@ -27,14 +25,15 @@
     }
     .hero a{
        transform: none;
-        margin-left: 60px;
+        margin-left: 80px;
     }
     .hero p{
         font-size: 1em;
-        margin-right: 110px;
+        margin-left: 120px;
         text-align: center;
     }
     .hero h2{
+        display: none;
         font-size: 1em;
         margin-right: 110px;
         text-align: center;
@@ -43,19 +42,13 @@
         display: none;
     }
     .boody{
-        transform: translate(5%, 0); width: 300px;
+        width: 100%;
     }
     .play-button img{
         width: 320px;
     }
     .fon3{
-        transform: translate(15%, 0);
-    }
-    .fon3{
-        width: 250px;
-    }
-    br{
-        display: none;
+        width: 100%;
     }
     .btn2{
         font-size: 1em;
@@ -65,12 +58,9 @@
         margin-left: -50px;
         font-size: 1em;
     }
-    .table{
-        width: 100px;
-    }
     .image-container img{
-        width: 300px;
-        margin-left: -50px;
+        width: 250px;
+        margin-left: 50px;
     }
     .feature-box {
         margin-bottom: 20px;
@@ -92,11 +82,13 @@
         display: block;
         width: 100%;
         margin: 10px 0;
+        font-size: 0.7rem;
     }
     .fon4{
         flex-direction: column;
         text-align: center;
         font-size: 0.85rem;
+        width: 100%;
     }
     .info-text {
         font-size: 14px;
@@ -114,82 +106,47 @@
     }
     .wrapper{
         transform: none;
+        width: 100%;
     }
-}
-@media (max-width: 768px) {
-    nav{
-        width: 650px;
+    .custom-card, .custom-card2{
+        width: 310px;
     }
-    .divider{
-        display: none;
+    .custom-card2 p, .custom-card2 h2, .custom-card p, .custom-card h2{
+        font-size: 0.9rem;
+        transform: none;
+        text-align: center;
     }
-    .background1{
-        margin-top: 10px;
+    .feature-box p{
+        font-size: 0.75rem;
     }
-    .dd{
-        margin-left: 50px;
+
+    footer{
+        width: 317px;
     }
-    .nav-link{
-        margin-left: 0;
-    }
-    .nav-link2{
-        margin-left: 100px;
-    }
-    .hero {
-        margin-left: -150px;
-    }
-    br h1, br p{
-        display: none;
-    }
-    .image-container{
-        margin-left: 30px;
-    }
-    .image-container2{
-        margin-top: 10px;
-        margin-right: 100px;
-        margin-bottom: 10px;
+    .info-block {
         width: 300px;
     }
-    .tt{
-        margin-left: 140px;
-    }
-    .logo-body{
+    .footer .contact-info {
+        color: #8E8E8E;
         transform: none;
-        margin-right: 490px;
-        margin-top: 80px;
-    }
-    .logo-body img{
-       width: 400px;
-    }
-    .hero a{
-        margin-left: 60px;
-        text-align: center;
-    }
-    .hero p{
-        font-size: 1em;
-        text-align: center;
-    }
-    .hero h2{
-        font-size: 1em;
-        text-align: center;
-    }
-    .custom-card2, .custom-card{
-        max-width: 430px;
-    }
-    .hero{
-        transform: translate(40%, 0);
-    }
-    br{
+        font-size: 1rem;
         display: none;
     }
-    .btn2{
-        font-size: 1em;
-        margin-top: 10px;
+    .footer .bottom-footer {
+        color: #6c757d;
+        text-align: start;
+        transform: none;
+        display: none;
+        font-size: 1rem;
     }
-    .wrapper{
-        transform: translate(25%, 0);
+    .table, .d1{
+        display: none;
+    }
+    .dr2{
+        transform: none;
     }
 }
+
 @media only screen and (min-width: 1439px) {
     nav{
         width: 1150px;
@@ -357,7 +314,7 @@ nav ul li .login-btn {
     width: 100%;
     max-width: 400px;
     left: 50%;
-    transform: translate(62%, 0);
+    transform: translate(72%, 0);
   }
 
   .tech-bubble {
@@ -501,7 +458,6 @@ nav ul li .login-btn {
     justify-content: center;
     background-color: #f7f4f4;
     border-radius: 50px;
-    transform: translate(1%, 0);
     margin-top: 30px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     max-width: 500px;
@@ -566,7 +522,7 @@ nav ul li .login-btn {
 }
 .wrapper {
     max-width: 1200px;
-    margin: auto;
+
 }
 
 .table {
@@ -646,14 +602,14 @@ nav ul li .login-btn {
     display: block;
     margin-bottom: 0.5rem;
     text-decoration: none;
-    transform: translate(30%, 0);
+    transform: translate(10%, 0);
 }
 .footer .footer-links a:hover {
     color: #007bff;
 }
 .footer .contact-info {
     color: #8E8E8E;
-    transform: translate(30%, 0);
+    transform: translate(10%, 0);
 }
 .footer .contact-info a.phone {
     color: #007bff;
